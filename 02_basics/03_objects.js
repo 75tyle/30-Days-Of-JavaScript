@@ -29,9 +29,21 @@ const obj4 = {...obj1,...obj2,...obj3}
 // console.log(obj4);
 // console.log(obj4 === obj1);
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));   //intresting
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));   //intresting
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("isLoggedin"));
+// console.log(tinderUser.hasOwnProperty("isLoggedin"));
+
+const course = {
+    courseIame: 'js in hindi',
+    coursePrice: '999',
+    courseInstructor: 'Sanghpal'
+}
+
+// console.log(course.courseInstructor);
+
+// const {courseInstructor} = course
+const {courseInstructor: instructor} = course
+console.log(instructor);
